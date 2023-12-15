@@ -2,7 +2,7 @@
 /* -----------------   HASH    ------------------- */
 /* ----------------------------------------------- */
 
-/* const { createHash } = require("crypto");
+const { createHash } = require("crypto");
 
 function hash(input) {
   return createHash("sha256").update(input).digest("hex");
@@ -18,6 +18,6 @@ let inputPassword = "hi-mom!";
 const hash2 = hash(inputPassword);
 
 const match = hash1 === hash2;
-console.log(match ? "✅ good password !" : "❌ wrong password!"); */
+console.log(match ? "✅ good password !" : "❌ wrong password!");
 
 /// theoretically can't decrypt message
